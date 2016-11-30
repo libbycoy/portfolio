@@ -14,9 +14,9 @@
 <body>
   <div id="mySidenav" class="sidenav">
     <div class="links">
-    <a href="#">work</a>
-    <a href="#">about</a>
-    <a href="#">contact</a>
+    <a href="#work" id="the-work">work</a>
+    <a href="#about" id="the-about">about</a>
+    <a href="#contact" id="the-contact">contact</a>
     </div>
   </div>
 
@@ -33,19 +33,19 @@
         <p class="descript"><span>from Los Angeles currently residing in Sydney</span></p>
       </div>
     </div>
-    <div class="side-text"><p class="see-more">projects ></p></div>
+    <div class="side-text"><a href="#"><p class="see-more">projects ></p></a></div>
   </section>
 
 
 
-  <section class="work-sec">
+  <section class="work-sec" id="work">
       <div class="work one">
         <div class="work-box project-3">
           <div class="text-clause" id="draw-gun">
           <h1>Browser Infographic</h1>
           <p class="subtitle-small">HTML CSS JAVASCRIPT</p>
-          <p class="about">I created an animated infographic in the browser about firearm statistics in the US and Australia. I have created a lot of infographics as a graphic designer and wanted to make one in the browser through code. I used the Chartjs library to create most of the graphs. I particularly enjoyed creating the bubble graphs which animate on click and display the differing rates of homocide and suicide gun deaths by firearm per 100,000 people in the US and Australia. The app also features a live voting system using Ajax.</p>
-          <p><i class="fa fa-code fa-1x"></i> code <i class="fa fa-link"> </i> live site</p>
+          <p class="about">This is an animated infographic about firearm statistics in the US and Australia. I have created a lot of infographics as a graphic designer so I decided to create this infographic to visualise data using Chartjs. The app also features a live voting system using Ajax.</p>
+          <p><a href="https://github.com/libbycoy/project3" target="blank"><i class="fa fa-code fa-1x"></i></a> <a href="http://aus-usa.herokuapp.com/" target="blank"><i class="fa fa-link fa-1x"></i></a> </p>
           </div>
           <div class="gun"></div>
 
@@ -54,8 +54,9 @@
           <div class="drawing"></div>
           <div class="text-clause" id="draw-draw">
           <h1>Rails App with canvas</h1>
-          <p class="about">Mindful Drawwwing is a social web app database I created from scratch using Ruby, Rails, and Javascript. It allows users to login, sign up and create digital paintings, using the currently popular practice of “Mindful Colouring” in the browser.</p>
-          <p><i class="fa fa-code fa-1x"></i> code <i class="fa fa-link"> </i> live site</p>
+          <p class="subtitle-small">HTML CSS JAVASCRIPT</p>
+          <p class="about">Mindful Drawwwing is a social web app database that allows users to login, sign up and create digital paintings, using the currently popular practice of “Mindful Colouring” in the browser.</p>
+          <p><a href="https://github.com/libbycoy/project1" target="blank"><i class="fa fa-code fa-1x"></i></a> <a href="https://painterly.herokuapp.com/" target="blank"><i class="fa fa-link fa-1x"></i></a>    </p>
         </div>
         </div>
       </div>
@@ -65,30 +66,32 @@
           <div class="game"></div>
           <div class="text-clause" id="draw-game">
           <h1>Phaser Game</h1>
-          <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam iusto beatae a, quas laboriosam, omnis tempora nisi dolorum, ipsa, eius quasi est. Cum cumque culpa deserunt, sed nemo quod nesciunt.</p>
-          <p><i class="fa fa-code fa-1x"></i> code <i class="fa fa-link"> </i> live site</p>
+          <p class="subtitle-small">HTML CSS JAVASCRIPT</p>
+          <p class="about">The Wealth Redistribution Simulator is a multi-level game built in Phaser for a group project at General Assembly.</p>
+          <p><a href="https://github.com/libbycoy/project-two" target="blank"><i class="fa fa-code fa-1x"></i></a>   <a href="https://github.com/libbycoy/project-two" target="blank"><i class="fa fa-link fa-1x"></i></a>   </p>
         </div>
         </div>
         <div class="work-box project-0">
           <div class="blog"></div>
           <div class="text-clause" id="draw-blog">
           <h1>Blog</h1>
+          <p class="subtitle-small">HTML CSS JAVASCRIPT</p>
           <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam iusto beatae a, quas laboriosam, omnis tempora nisi dolorum, ipsa, eius quasi est. Cum cumque culpa deserunt, sed nemo quod nesciunt.</p>
-          <p><i class="fa fa-code fa-1x"></i> code <i class="fa fa-link"> </i> live site</p>
+          <p><a href="https://github.com/libbycoy/teaparty" target="blank"><i class="fa fa-code fa-1x"></i></a> <a href="https://github.com/libbycoy/project1" target="blank"><i class="fa fa-link fa-1x"></i></a> </p>
         </div>
       </div>
 
     </div>
   </section>
 
-  <section class="work-sec">
+  <section class="work-sec" id="about">
 
         <div id="content">
           <div class="about-box"></div>
           <div class="about-content">
-          <p class='libby'>A front-end dev with a design background</p>
+          <p class='libby'>The story of a baby unicorn</p>
                 <p class="subtitle">
-                About me
+                A front-end dev with a design background
                </p>
                <p class="bodytext">
                "hi i am jennmoneydollars. i'm an artist in jersey city (on purpose) and an open web engineer at a cool company called bocoup. when i'm not building open web apps with the coolest folks in the game, i'm making art with code, telling jokes, and getting yelled at on the internet. my visual art has been described as "neon abstract pixel erotica" and my tech satire has been described as "your eyes are awful, like you are also awful".
@@ -105,17 +108,15 @@
               <i class="fa fa-camera-retro fa-2x"></i>
               <i class="fa fa-camera-retro fa-2x"></i>
 
-        			</div><!-- #content -->
-                  <div id="clear"></div>
-
+        			</div>
       </section>
 
-  <section class="footer">
+  <section class="footer" id="contact">
 
-    <div><i class="fa fa-envelope-o fa-2x"></i> email</div>
-    <div><i class="fa fa-github-alt fa-2x"></i> github</div>
-    <div><i class="fa fa-twitter fa-2x"></i> twitter</div>
-    <div><i class="fa fa-linkedin fa-2x"></i> linkedin</div>
+    <div><a href="mailto:libbycoy23@gmail.com" target="_blank" ><i class="fa fa-envelope-o fa-4x"></i></a></div>
+    <div><a href="https://github.com/libbycoy" target="_blank" ><i class="fa fa-github-alt fa-4x"></i></a></div>
+    <div><a href="https://twitter.com/labelmelibby" target="_blank" ><i class="fa fa-twitter fa-4x"></i></a></div>
+    <div><a href="https://au.linkedin.com/in/libbycoy" target="_blank" ><i class="fa fa-linkedin fa-4x"></i></a></div>
 
   </section>
 

@@ -30,15 +30,22 @@ body {
   /*background-blend-mode: screen;*/
 }
 
+.links {
+  font-size: 8px;
+}
+
 .about-box {
   /*background-color: purple;*/
-  background: url("rainbow.gif") no-repeat;
-  height: 500px;
-  width: 400px;
-    /*margin-top: 80px;
-    margin-left: 500px;*/*/
-  position: absolute;
-  z-index: 1;
+  background: url("me.jpg");
+  background-size: 600px;
+  background-color: #ddd;
+  background-blend-mode: overlay;
+  height: 400px;
+  width: 500px;
+  margin-top: 30px;
+    margin-left: 350px;
+  /*position: absolute;
+  z-index: 1;*/
   /*top: 0;*/
   /*left: 220;*/*/
   /*background-blend-mode: screen;*/
@@ -56,6 +63,7 @@ body {
 .work-sec {
   margin: 0 auto;
   margin-top: 50px;
+  padding-top: 30px;
   /*margin-left: 110px;*/
   background-blend-mode: screen;
   height:90vh;
@@ -66,14 +74,20 @@ body {
 
 .see-more {
   text-align: center;
-  color: pink;
+  color: #457371;
   position: absolute;
   transform: rotate(90deg);
+  font-family: 'Open Sans 700', sans-serif;
+  letter-spacing: 2px;
+  font-variant-caps: all-small-caps;
+  font-weight: 700;
+  opacity: 0.5;
 }
 
 .side-text {
   padding: 10px;
   margin-left: -180px;
+  margin-top: 20px;
 }
 
 .intro-text {
@@ -108,7 +122,6 @@ h1 {
 }
 
 .libby {
-  margin-left: 10px;
   font-size: 60px;
   color: #eee;
   line-height: 40px;
@@ -140,6 +153,11 @@ h1 {
   color: white;
   line-height: 40px;
   width: 60%;
+  opacity: 0.8;
+}
+
+span {
+  opacity: 1 !important;
 }
 
 .work-box {
@@ -205,6 +223,8 @@ span {
   position: absolute;
   top: 0;
   left: 0;
+  margin-left: 10px;
+
 }
 
 .game {
@@ -293,7 +313,7 @@ span {
   font-family: 'Open Sans 700', sans-serif;
   letter-spacing: 2px;
   font-variant-caps: all-small-caps;
-  padding: 30px;
+  padding: 40px;
   text-decoration: none;
   font-size: 20px;
   display: block;
@@ -332,7 +352,6 @@ span {
 }
 
 .subtitle {
-  margin-left: 20px;
 	line-height: 1.3;
   color: #BF6658;
   font-weight: 700;
@@ -363,7 +382,7 @@ span {
 }
 
 .bodytext {
-  margin: 40px 40px 15px 20px;
+  margin: 40px 40px 15px 0px;
 	line-height: 1.3;
   font-size: 12px;
   letter-spacing: 0px;
@@ -389,9 +408,14 @@ span {
 
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 200px;
 }
 
-/*.icons {
-  margin: 0 auto;
-}*/
+a i {
+  color: pink;
+}
+
+a i:hover {
+  color: teal;
+}

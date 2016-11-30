@@ -4,6 +4,49 @@ $(document).ready(function() {
   $('#draw-blog').hide();
   $('#draw-draw').hide();
   $('#draw-game').hide();
+  $('.see-more').hide();
+
+  $('.see-more').fadeIn(3000);
+
+  $('.see-more').click(function() {
+    $('html, body').animate({
+      scrollTop: $("#work").offset().top
+   }, 800);
+  });
+
+
+  $("#the-work").click(function() {
+    $('#the-work').css('color', '#457371');
+    $('#the-about').css('color', '#eee');
+    $('#the-contact').css('color', '#eee');
+    $('html, body').animate({
+      scrollTop: $("#work").offset().top
+   }, 800);
+  });
+
+  $("#the-about").click(function() {
+    $('#the-about').css('color', '#457371');
+    $('#the-work').css('color', '#eee');
+    $('#the-contact').css('color', '#eee');
+    $('html, body').animate({
+      scrollTop: $("#about").offset().top
+   }, 800);
+  });
+
+  $("#the-contact").click(function() {
+    $('#the-contact').css('color', '#457371');
+    $('#the-work').css('color', '#eee');
+    $('#the-about').css('color', '#eee');
+    $('html, body').animate({
+      scrollTop: $("#contact").offset().top
+   }, 800);
+  });
+
+  $('.descript').hover( function() {
+    $('.descript').css('background-color', '#65E0CB');
+    }, function(){
+      $('.descript').css('background-color', '#eee');
+  });
 
   $('.project-3').hover( function() {
     $('#draw-gun').show();
