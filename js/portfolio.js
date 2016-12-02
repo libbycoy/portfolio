@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   $('.svg').css('fill', '#eee');
 
+  $('#links').hide();
   $('#draw-gun').hide();
   $('#draw-blog').hide();
   $('#draw-draw').hide();
@@ -78,24 +79,11 @@ $(document).ready(function() {
       $('#draw-blog').hide();
   });
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
+  $('.circle').hover( function() {
+    $('#links').show();
+    $('#links').addClass('animated slideInUp');
+    // }, function(){
+    //   $('#links').hide();
+  });
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
-
-  // $(window).scroll(function(event) {
-  //   var y = $(this).scrollTop();
-  //
-  //   if (y >= 300) {
-  //     $('.one').addClass('animate');
-  //     $('.two').addClass('animate');
-  //   }
-  // });
 });

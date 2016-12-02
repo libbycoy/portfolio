@@ -25,6 +25,17 @@
   left: 220;
 }
 
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #d3d3d3;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.circle {}
+
 .links {
   font-size: 8px;
 }
@@ -306,6 +317,7 @@ nav {
 }
 
 .sidenav {
+  width: 90px;
   height: 100%; /* 100% Full-height */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -326,7 +338,7 @@ nav {
   font-family: 'Open Sans 700', sans-serif;
   letter-spacing: 2px;
   font-variant-caps: all-small-caps;
-  padding: 40px;
+  /*padding: 40px;*/
   text-decoration: none;
   font-size: 20px;
   display: block;
@@ -420,9 +432,13 @@ nav {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-around;
+  /*display: flex;
+  justify-content: space-around;*/
   padding: 200px;
+}
+
+.navbar {
+  border-right: .2px solid #eee;
 }
 
 .skills {
@@ -441,4 +457,9 @@ i {
 
 a i:hover {
     color: #BF6658;
+}
+
+.nav-links {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
