@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $('.svg').css('fill', '#eee');
+
   $('#draw-gun').hide();
   $('#draw-blog').hide();
   $('#draw-draw').hide();
@@ -43,7 +45,7 @@ $(document).ready(function() {
   });
 
   $('.descript').hover( function() {
-    $('.descript').css('background-color', '#65E0CB');
+    $('.descript').css('background-color', '#bbd3d6');
     }, function(){
       $('.descript').css('background-color', '#eee');
   });
