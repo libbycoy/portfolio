@@ -3,6 +3,9 @@ $(document).ready(function() {
   $('.svg').css('fill', '#eee');
 
   $('#links').hide();
+  $('.skill-info').hide();
+  // $('.about').hide();
+
   $('#draw-gun').hide();
   $('#draw-blog').hide();
   $('#draw-draw').hide();
@@ -16,6 +19,23 @@ $(document).ready(function() {
       scrollTop: $("#work").offset().top
    }, 800);
   });
+
+  $(window).scroll(function() {
+
+    if ($(this).scrollTop() > 260) {
+    $('.skill-info').fadeIn();
+     $('.skill-info').addClass('animated slideInUp');
+    }
+
+    if ($(this).scrollTop() > 740) {
+     $('.about').addClass('animated slideInUp');
+    }
+
+    if ($(this).scrollTop() > 940) {
+     $('.work-sec').addClass('animated slideInUp');
+    }
+
+   });
 
 
   $("#the-work").click(function() {
